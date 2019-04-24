@@ -2,17 +2,18 @@
 #ifndef HEADER_H
 #define HEADER_H
 #define BACKGROUNDSCROLLSPEED .1
-#define INITIAL_SPEED 1
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include <algorithm>
-
-#define FPS 50
-#define MAX_FRAME_TIME 5 * 1000 / FPS
 
 
 
+#define PLAYERSPEED 2
+
+#define PLAYER_TOP_BOUND 155
+#define PLAYER_BOTTOM_BOUND 645
+
+#include "Player.h"
 
 
 

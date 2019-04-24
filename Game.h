@@ -22,7 +22,7 @@ private:
 	void gameLoop();
 
 	//handles all events (such as mouse clicks or button presses)
-	void eventHandler(sf::Event &event, sf::RenderWindow &window);
+	void eventHandler(Player &player, sf::Event &event, sf::RenderWindow &window);
 
 	//handles current state of all keys (ie pressed or not)
 	void keystateHandler(sf::RenderWindow &window);

@@ -2,7 +2,7 @@
 
 Background::Background(){
 	
-	if (!this->texture.loadFromFile("../../Enemies/Background.png")) {
+	if (!this->texture.loadFromFile("Background.png")) {
 		std::cout << "ERROR: CAN'T LOAD BACKGROUND IMAGE" << std::endl;
 
 	}
@@ -46,11 +46,11 @@ void Background::moveLeft(float delta_t, sf::RenderWindow &window) {
 
 	if (this->sprite1.getPosition().x <= -1420.8) {
 
-		std::cout << "============= TELEPORT =============" << std::endl;
+		/*std::cout << "============= TELEPORT =============" << std::endl;
 
 		std::cout << "Sprite 1 Position: (" << this->sprite1.getPosition().x << ", " << this->sprite1.getPosition().y << ")" << std::endl;
 		std::cout << "Sprite 2 Position: (" << this->sprite2.getPosition().x << ", " << this->sprite2.getPosition().y << ")" << std::endl;
-		
+		*/
 		Sprite temp = this->sprite1;
 
 
@@ -63,7 +63,7 @@ void Background::moveLeft(float delta_t, sf::RenderWindow &window) {
 
 		float xpos = this->sprite1.getPosition().x + this->sprite2.getGlobalBounds().width;
 
-		std::cout << xpos << std::endl;
+		//std::cout << xpos << std::endl;
 
 
 		this->sprite2.setPosition(sf::Vector2f((xpos), 0));

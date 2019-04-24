@@ -18,11 +18,6 @@ int main(int argc, char argv[]) {
 	Game game;
 
 	
-
-	Background background();
-	
-
-	
 	system("pause");
 	return 0;
 }
